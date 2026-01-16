@@ -36,24 +36,7 @@ kafka-learning-project/
 docker-compose up -d
 \`\`\`
 
-### 2. Создание топиков Kafka
-\`\`\`bash
-# Топик для событий пользователей
-docker exec -it kafka kafka-topics.sh --create \
-  --topic user-events \
-  --bootstrap-server localhost:9092 \
-  --partitions 1 \
-  --replication-factor 1
-
-# Топик для событий заказов
-docker exec -it kafka kafka-topics.sh --create \
-  --topic order-events \
-  --bootstrap-server localhost:9092 \
-  --partitions 1 \
-  --replication-factor 1
-\`\`\`
-
-### 3. Сборка и запуск сервисов
+### 2. Сборка и запуск сервисов
 \`\`\`bash
 # Сборка общего модуля
 cd common-dto && mvn clean install
@@ -106,14 +89,3 @@ curl -X POST http://localhost:8081/api/orders \
     ]
   }'
 \`\`\`
-
-## Технологии
-- Java 21
-- Spring Boot 3.2.0
-- Apache Kafka 3.7.0
-- PostgreSQL 16
-- Docker & Docker Compose
-- Maven
-- Spring Kafka
-- Spring Data JPA
-git commit -m "Добавлен README.md с документацией проекта и инструкциями по запуску"
