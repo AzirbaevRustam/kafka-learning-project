@@ -1,0 +1,103 @@
+﻿# Maven
+target/
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA - полное игнорирование
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Docker
+docker-compose.override.yml
+
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temp
+tmp/
+temp/
+
+# Sonar
+.sonar/
+
+# Checkstyle
+checkstyle-result.xml
+
+# Jacoco
+jacoco.exec
+*.jacoco
+
+# Application properties (local)
+application-local.yml
+application-local.properties
+
+# Database
+*.db
+*.sqlite
+
+# Gradle (если будете использовать)
+.gradle/
+build/
+
+# Maven wrapper (если есть)
+.mvn/wrapper/maven-wrapper.properties
